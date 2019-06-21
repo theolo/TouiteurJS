@@ -1,0 +1,163 @@
+.App {
+  width: 96%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+}
+
+header p {
+  font-size: 12px;
+  margin: 5px 0 20px 0;
+}
+
+.postform {
+  background: rgb(190, 190, 190);
+  border-radius: 15px; 
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+input, button {
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+input {
+  padding: 1em;
+}
+
+.postform button {
+  width: 10%;
+  font-size: 14px;
+  background: green; 
+  color: white;
+}
+
+.nameInput {
+  width: 10%;
+}
+
+.messInput {
+  width: 75%;
+}
+
+.content-page {
+  margin: 3% 0 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.trending {
+  background: rgb(190, 190, 190);
+  width: 16%;
+  height: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.trend {
+  border-radius: 5px;
+  font-size: 14px;
+  background: green;
+  color: white;
+  padding: 3%;
+  margin: 1%;
+}
+
+.active {
+  background: lightgreen;
+  border: 1px solid green;
+  color: black;
+}
+
+
+.touiteszone {
+  background: rgb(190, 190, 190);
+  width: 76%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse; 
+  border-radius: 5px;
+}
+
+.touite {
+  border-radius: 1px; 
+  box-shadow: 10px 5px 5px black;
+  min-width: 15%;
+  margin: 1%;
+  padding: 1%;
+  transition: 0.6s;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.touite:nth-child(4n+0) {
+  background: radial-gradient(ellipse farthest-corner at right bottom, rgb(55, 58, 254) 0%, rgb(49, 90, 253) 8%, #28329f 30%, rgb(49, 47, 138) 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, rgb(36, 55, 162) 8%, rgb(100, 113, 209) 25%, #21118a 62.5%, #140172 100%);
+}
+
+.touite:nth-child(4n+1) {
+  background: radial-gradient(ellipse farthest-corner at right bottom, rgb(254, 55, 55) 0%, rgb(253, 49, 49) 8%, #9f2828 30%, rgb(138, 47, 47) 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, rgb(255, 172, 172) 8%, rgb(209, 100, 100) 25%, #5d1f1f 62.5%, #5d1f1f 100%);
+}
+
+.touite:nth-child(4n+2) {
+  background: radial-gradient(ellipse farthest-corner at right bottom, rgb(55, 254, 184) 0%, rgb(49, 253, 222) 8%, #289f9d 30%, rgb(47, 138, 129) 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, rgb(172, 247, 255) 8%, rgb(100, 187, 209) 25%, #1f595d 62.5%, #1f565d 100%);
+}
+.touite:nth-child(4n+3) {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.touite:hover {
+  transform: scale(1.1);
+}
+
+.pseudo {
+  text-align: right;
+  font-style: italic;
+  color: grey;
+}
+
+.vibre {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
