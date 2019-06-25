@@ -44,7 +44,7 @@ class SendMessageForm extends React.Component {
                 <form className="postform" onSubmit={this.handleSubmit}>
                     <input className="nameInput" type="text" name="name" placeholder="Nom" value={values.name} onChange={event => this.handleChange('name', event.target.value)}/>
                     <input className="messInput" type="text" name="message" placeholder="message" value={values.message} onChange={event => this.handleChange('message', event.target.value)}/>
-                    <button>Touiter</button>
+                    <button type="submit">Touiter</button>
                 </form>
             </div>
         )
